@@ -1,0 +1,113 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	border-sizing:border-box;
+}
+body{
+	font-family:"Comic Sans MS", cursive;
+	background:#999;
+}
+header {
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	padding:20px;
+
+	background:#34495E;
+}
+header #btnmenu
+{
+	font-size:40px;
+	color:#ffffff;
+	cursor:pointer;
+}
+.navegacion
+{
+	position:absolute;
+	top:100%;
+	left:0;
+	width:0%;
+	height:100vh;
+	background:rgba(0,0,0,0.3);
+	
+}
+.navegacion .menu li.titulomenu
+{
+	padding:20px;
+	background:#5f6f81;
+	color:#FFF;
+	text-align:center;
+	font-size:22px;
+}
+.navegacion ul
+{
+	width:320px;
+	height:100%;
+	background:#fff;
+	list-style:none;
+	position:absolute;
+	top:0;
+	left:-320px;
+	transition:left 1s;
+}
+.navegacion .menu a
+{
+	display:block;
+	padding:20px;
+	border-bottom:1px solid #c6d0da;
+	font-size:22px;
+	font-weight:200px;
+	text-decoration:none;
+	color:#575d69;
+}
+.navegacion .menu a:hover
+{
+	background:#798da3;
+	color:#FFF
+}
+.navegacion .menu li span .icon-menu
+{
+	margin-right:12px;
+}
+.navegacion .menu .itemsubmenu > a::After
+{
+	
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	content:"\f105";
+	float:right;
+}
+.icon-menu {
+  margin-right: 12px;
+}
+	
+
+/*submenu*/
+.navegacion .submenu li.titulomenu
+{
+	background:#fff;
+	color:#075d69;
+}
+.navegacion .menu li.regresa
+{
+	padding:10px 20px;
+	background:#5f6f81;
+	color:#fff;
+	font-size:18px;
+	cursor:pointer;
+}
+.navegacion .menu li.regresa::before
+{
+	font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	 content: "\f0d9";
+	 margin:10px;	
+}
